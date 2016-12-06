@@ -1,7 +1,8 @@
 var path = require('path');
 var webpack = require('webpack');
 module.exports = {
-  entry: './main.js',
+  devtool: 'eval',
+  entry: './src/index.js',
   output: { path: __dirname, filename: 'bundle.js' },
   module: {
     loaders: [
